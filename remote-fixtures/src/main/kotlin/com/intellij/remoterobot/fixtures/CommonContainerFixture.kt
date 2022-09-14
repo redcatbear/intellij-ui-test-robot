@@ -6,13 +6,13 @@ import com.intellij.remoterobot.search.locators.Locator
 import java.time.Duration
 
 /*
-    for base fixtures we need at least this methods:
+    for base fixtures we need at least these methods:
 
         component(locator: Locator, timeout: Duration): ComponentFixture { findWithTimeout.... }  - universal way of finding one component
         components(locator: Locator): List<ComponentFixture> { findAll.... }  - universal way of finding list of components
 
-    and also we can have short calls for often using locators:
-        component(text: String): ComponentFixture = component(ComponentFixture.byText(text)) - example of short method
+    and also we can have compact calls for frequently used locators:
+        component(text: String): ComponentFixture = component(ComponentFixture.byText(text)) - example of a compact method
 
  */
 
